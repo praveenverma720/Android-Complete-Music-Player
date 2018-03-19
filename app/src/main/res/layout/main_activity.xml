@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.praveen.pilani.desiplayer.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.praveen.pilani.desiplayer.MainActivity">
+
+    <!-- ARTISTS LAYOUT -->
+    <com.praveen.pilani.desiplayer.fastscroller.FastScrollerRecyclerView
+        android:id="@+id/artists_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.praveen.pilani.desiplayer.MainActivity" />
+
+    <!-- SLIDING LAYOUT -->
+    <include layout="@layout/sliding_panel" />
+
+</com.praveen.pilani.desiplayer.slidinguppanel.SlidingUpPanelLayout>

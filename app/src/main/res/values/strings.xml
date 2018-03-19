@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Desi Player</string>
+    <string name="album">%s (%d album)</string>
+    <string name="albums">%s (%d albums)</string>
+    <string name="unknown_year">Year unknown</string>
+    <string name="eq">Equalizer</string>
+    <string name="no_eq">No equalizer was found! :(</string>
+    <string name="bad_id">Play a song first from above list</string>
+    <string name="enjoy">Select a song </string>
+    <string name="playing_song" translatable="false">&lt;b>%1s&lt;/b> - %2s</string>
+
+    <string name="perm_rationale">To let You play the music on your phone, Desi Player needs access to your files</string>
+    <string name="error_no_music">No music on your phone</string>
+</resources>

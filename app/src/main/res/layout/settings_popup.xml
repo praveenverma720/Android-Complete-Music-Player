@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/settings_bg"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp">
+
+    <!-- OPTIONS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+
+
+        <ImageButton
+            android:id="@+id/eq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:foreground="@drawable/ripple"
+            android:onClick="openEqualizer"
+            android:padding="8dp"
+            android:src="@drawable/ic_equalizer" />
+
+        <ImageButton
+            android:id="@+id/theme_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            android:foreground="@drawable/ripple"
+            android:onClick="switchTheme"
+            android:padding="8dp"
+            android:src="?attr/theme_icon" />
+    </LinearLayout>
+
+    <!-- COLORS OPTIONS -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/colors_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        tools:context="com.praveen.pilani.desiplayer.MainActivity" />
+</LinearLayout>
